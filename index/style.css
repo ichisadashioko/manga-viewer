@@ -1,22 +1,33 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Consolas, monospace;
 }
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
 .flex {
     display: flex;
 }
+
 .flex-wrap {
     flex-wrap: wrap !important;
 }
 
 .card {
     display: inline-block;
-    width: 128px;
-    height: 128px;
-    min-width: 128px;
-    min-height: 128px;
+    width: 185px;
+    min-width: 185px;
+    height: 265px;
+    min-height: 265px;
     position: relative;
-    border: solid 1px black;
+    border: solid 1px #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card p.title {
@@ -28,6 +39,6 @@
 }
 
 .card img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
